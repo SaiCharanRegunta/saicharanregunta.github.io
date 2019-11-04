@@ -1,0 +1,240 @@
+/*
+ * Author: Carlos Alvarez
+ * URL: http://alvarez.is
+ *
+ * Project Name: Victoria vCard - Free Bootstrap 3 Theme
+ * Version: 1.0
+ * URL: http://blacktie.co
+ */
+@font-face {
+    font-family: myFirstFont;
+    src: url(../bilbo/LifeSavers-Regular.ttf);
+}
+@font-face {
+    font-family: myFirstFont2;
+    src: url(../bilbo/LifeSavers-Bold.ttf);
+}
+@font-face {
+    font-family: rowdyFont;
+    src: url(../font/BRUSHSTRIKE.woff2);
+}
+
+body {
+  	background-color: #f2f2f2;
+    font-family: myFirstFont;
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+    padding-top: 10%;
+    
+	background-image: url(../img/header-bg.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+  }
+
+/* Titles */
+h1, h6 {
+    font-family:/* rowdyFont;/**/myFirstFont2;
+    font-weight: 300;
+    color: #333;
+}
+h2,h3,h4,h5 {
+
+    font-family: myFirstFont;
+    font-weight: 300;
+    color: #333;
+	font-variant: small-caps;
+}
+
+
+/* Paragraph & Typographic */
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.centered {
+    text-align: center;
+}
+
+/* Links */
+a {
+    color: #259906;
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: orange;
+    text-decoration: none;
+    outline: 0;
+    -webkit-filter: drop-shadow(5px 5px 1px grey)
+
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.w {
+	background-color: #ffffff;
+	border: 1px solid #dddddd;
+	-moz-box-shadow: 5px 5px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 5px 5px rgba(0,0,0,0.2);
+	box-shadow: 5px 5px rgba(0,0,0,0.2);
+}
+
+
+.col-md-4 {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.col-md-8 {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+
+.nav-tabs {
+	border-bottom: 1px solid #dddddd;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	color: #555555;
+	cursor: default;
+	background-color: #ffffff;
+	border-left: 5px solid #259906;
+	border-bottom-color: transparent;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	width: 100%;
+}
+
+.nav-tabs > li > a {
+	margin-right: 2px;
+	line-height: 1.428571429;
+	border-bottom: 1px solid #dddddd;
+	border-radius: 0 0 0 0;
+	width: 100%;
+	background-color: #f2f2f2;
+}
+
+.tab-content {
+	background-color: #ffffff;
+	padding-left: 15px;
+	padding-top: 20px;
+	padding-right: 15px;
+}
+
+.tab-content h5 {
+	color: #bdc3c7;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.red i {
+	font-size: 12px;
+	color: #e74c3c;
+}
+
+i {
+	vertical-align: middle;
+}
+
+.sm {
+	font-size: 14px;
+}
+
+a h6{
+	color: #259906;
+}
+
+a h6:hover {
+	color: #7b7b7b;
+}
+
+grey {
+	color: #bdc3c7;
+	font-weight: 700;
+}
+#center {
+  position: relative;
+  height: 50%;
+  width: 50%;
+}
+
+#cont {
+  width:  20%;
+  height: 20%;
+  top: 40%;
+  bottom: 40%;
+  left: 40%; 
+  right: 40%;
+}
+
+#dot {
+  width:  20%;
+  height: 20%;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  padding-left: 1%;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
